@@ -314,7 +314,7 @@ public class MessageService extends AbstractService {
                 .builder()
                 .chatId(chatId)
                 .caption("`Happy Birthday`")
-                .inputFile(getInputFileByPath("/", "birthday", "ogg"))
+                .inputFile(getInputFileByPath("", "birthday", "ogg"))
                 .build();
     }
 }

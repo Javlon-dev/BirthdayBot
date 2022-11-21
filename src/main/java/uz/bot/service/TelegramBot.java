@@ -74,7 +74,7 @@ public class TelegramBot extends TelegramLongPollingBot {
         }
     }
 
-    @Scheduled(cron = "${cron.every.day.at.1}")
+    @Scheduled(/*cron = "${cron.every.day.at.1}"*/ fixedDelay = 5000)
     public void rememberBirthday() {
         try {
             log.info("rememberBirthday");
